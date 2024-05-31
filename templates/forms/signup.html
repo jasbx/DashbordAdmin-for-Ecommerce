@@ -1,0 +1,27 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "css/signup.css" %}">
+<div class="form-style-8">
+    <h2>SigNUp</h2>
+    <form method="POST"> 
+        {% csrf_token %}
+        <label for="fname">user name</label>
+      {{signup.username}}
+        <label for="fname">password</label>
+      {{signup.password1}}
+        <label for="fname">Password confirmation</label>
+      {{signup.password2}}
+        <label for="fname">first name</label>
+      {{signup.first_name}}
+      <label for="lname">last name</label>
+      {{signup.last_name}}
+      <label for="email">Email</label>
+      {{signup.email}}
+
+     
+     
+      
+      <input type="submit" value="SignUp" />
+    </form>
+  </div>
+
+

@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "css/detal.css" %}">
+<div class="container">
+
+    <div class="wrapper">
+ 
+        <img  src="{{detal_product.img.url}}"   class="banner-image" alt="">
+    
+      <h1> {{detal_product.name}}</h1>
+      <p> {{detal_product.about}}</p>                
+      <p>price: {{detal_product.price}}$</p>                
+      <p>rate: {{detal_product.rate}} stars</p>              
+      <code> {{detal_product.date}}</code>                
+     </div>
+       </div>
+   </div>
